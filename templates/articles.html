@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+<head>
+ <meta charset="utf-8">
+<link href="{% static "bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "register.css" %}" rel="stylesheet">
+<link rel="icon" href="{% static "eye.png" %}" type="image/x-icon">
+</head>
+<body>
+{% for articles in articles %}
+{{articles.title}}
+{{articles.text}}
+{% endfor%}
+</body>
+</html>

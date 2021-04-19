@@ -1,0 +1,62 @@
+{% load static %}
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Settings</title>
+<link href="{% static "bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "register.css" %}" rel="stylesheet">
+<link rel="icon" href="{% static "eye.png" %}" type="image/x-icon">
+</head>
+<body>
+{% include "shablon/navbar.html" %}
+	<div>
+<h4 style="
+    margin: 155px 95px 0px;
+    /* float: left; */
+    display: inline-block;
+">Settings</h4><p style="
+    margin: -25px 250px;
+"></p>
+</div>
+{% include "shablon/tags.html" %}
+	<div class="question" style="
+    background: whitesmoke;
+">
+    <form action="" method="POST" _lpchecked="1">
+    <p style="
+    margin: 5px 11px;
+">Login:<input type="text" name="login" placeholder="Login" style="margin: 10px 90px; width: 300px; border-radius: 20px;"></p><br>
+    <p style="
+    margin: 5px 15px;
+">Email:<input type="text" name="email" placeholder="Email" style="
+    margin: -16px 85px;
+    width: 300px;
+    border-radius: 20px;
+"></p><br>
+    <p style="
+    margin: 15px 15px;
+">NickName:<input type="text" name="nick" placeholder="Nickname" style="
+    margin: -23px 50px;
+    width: 300;
+    border-radius: 20px;
+"></p><br>
+<p style="
+    margin: 15px 15px;
+">Upload avatar:
+<img style="margin:15px;border-radius:20px;border: 2px solid red" src="/static/1.jpg" height="80px" width="80px" class="pic"><br>
+<input type="file" name="avatar" placeholder="Choose avatar" style="
+    margin: -23px 122px;
+    width: 300;
+">
+<input style="color: white; background-color:#1E90FF" type="submit" name="submit" value="Loading...">
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span class="visually-hidden">Loading...</span>
+</button></p><br>
+<input type="submit" name="submit" value="Save!" class="btn btn-success" style="
+    margin: -10px 142px;
+"><br>
+  </form>
+</div>
+</body>
+</html>

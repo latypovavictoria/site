@@ -1,0 +1,9 @@
+venv/
+node_modules/
+*.pyc
+__pycache__/
+googletest-release-1.10.0.tar.gz
+boost_1_75_0.tar.bz2
+app/
+bootstrap-5.0.0-beta3-dist.zip
+bootstrap/

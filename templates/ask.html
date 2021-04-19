@@ -1,0 +1,71 @@
+{% load static %}
+<html lang="en" class="h-100"><head>
+    <meta charset="utf-8">
+    <title>Ask</title>
+<link href="{% static "bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+<link href="{% static "ask.css" %}" rel="stylesheet">
+<link rel="icon" href="{% static "eye.png" %}" type="image/x-icon">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    .pic{
+        float:left;
+        margin:0px 3px;
+    }
+    </style>
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    {% include "shablon/login1.html" %}
+	<div>
+<h4 style="
+    margin: 155px 95px 0px;
+    /* float: left; */
+    display: inline-block;
+">New Question</h4><p style="
+    margin: -25px 250px;
+"></p>
+</div>
+	{% include "shablon/tags.html" %}
+	<div class="question" style="
+    background: whitesmoke;
+">
+    <form action="" method="POST" _lpchecked="1">
+    <p style="
+    margin: 5px 11px;
+">Title:<input type="text" name="title" placeholder="Title" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto; margin: 10px 20px; width: 800px; border-radius: 20px;"></p><br>
+    <p style="
+    margin: 5px 15px;
+">Text:<input type="text" name="text" placeholder="Text" style="
+    margin: -16px 50px;
+    height: 500px;
+    width: 795px;
+    border-radius: 20px;
+"></p><br>
+    <p style="
+    margin: 15px 15px;
+">Tags:<input type="text" name="tags" placeholder="Tags" style="
+    margin: -23px 50px;
+    width: 800;
+    border-radius: 20px;
+"></p><br>
+<input type="submit" name="submit" value="Ask!" class="btn btn-success" style="
+    margin: -10px 69px;
+"><br>
+  </form>
+</div>
+{% include "shablon/footer.html" %}
+</body></html>
